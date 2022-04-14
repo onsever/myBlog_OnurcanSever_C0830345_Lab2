@@ -1,0 +1,176 @@
+.main-container {
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(28, 29, 31);
+  width: 70%;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(56, 55, 55);
+  width: 30%;
+}
+
+/* Styling Main Content */
+.main-content table {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+
+.main-content table ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.learn-more-container {
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.learn-more-container a {
+  color: rgb(56, 55, 55);
+}
+
+.learn-more-container a:hover {
+  color: rgb(212, 146, 89);
+  text-decoration: underline;
+}
+
+.resume-container {
+  width: 100%;
+  margin: 10px;
+}
+
+.table-header {
+  background-color: whitesmoke;
+  color: rgb(212, 146, 89);
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.summary-container {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.experience-container {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.education-container {
+  padding: 5px;
+}
+
+/* Styling Aside Content */
+.card-container {
+  background-color: whitesmoke;
+  border: 1px solid rgb(56, 55, 55);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-container h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-container h4 {
+  text-align: start;
+}
+
+.card-container ul {
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-container:last-child {
+  text-align: start;
+  padding: 10px;
+}
+
+.card-container:last-child h3 {
+  margin-top: 5px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.aside-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+@media all and (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .aside-content {
+    width: 100%;
+  }
+
+  .learn-more-container a {
+    display: block;
+  }
+}
+
+@media all and (min-width: 370px) and (max-width: 375px) {
+  .card-container {
+    margin: 10px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 880px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .aside-content {
+    align-items: center;
+    width: 100%;
+  }
+
+  .learn-more-container a {
+    display: block;
+  }
+
+  .card-container:last-child {
+    text-align: center;
+    width: 50%;
+  }
+}
